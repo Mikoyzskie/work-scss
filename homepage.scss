@@ -49,3 +49,28 @@ div.testimonials .userpic{
     background-color:transparent;
 }
 /* END */
+
+//FEATURED VIDEO SHARE
+div.featured-video__content .buttons-container .share-container .share-wrapper{
+    background-color: #fff;
+    ul.lp-socials--light .lp-socials__link{
+        background-color: transparent;
+        color:#012069;
+        &:hover{
+            background-color: #012069;
+            color:#fff;
+        }
+    }
+}
+
+//AGENT SLIDER
+@media only screen and (max-width:768px){
+    div.lp-container ul.featured-team{
+        .lp-arrow--prev{
+            left:-40px;
+        }
+        .lp-arrow--right{
+            right:-40px;
+        }
+    }
+}
