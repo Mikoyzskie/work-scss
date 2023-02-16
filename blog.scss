@@ -1,0 +1,21 @@
+/* Start - Blog proper spacing - WB Myk REV */
+div.blog-list__container{
+    a.blog-list__item h4.serif{
+        text-transform: uppercase;
+    }
+    @media only screen and (min-width:769px){
+        a.blog-list__item:nth-last-child(2){
+            margin-bottom: 0;
+            div.blog-list__item-content{
+                padding-bottom: 0;
+            }
+        }
+    }
+    a.blog-list__item:last-child{
+        margin-bottom: 0;
+        div.blog-list__item-content{
+            padding-bottom: 0;
+        }
+    }
+}
+/* END */

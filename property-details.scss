@@ -1,0 +1,24 @@
+//Mortgage Calc
+/* Start - Mobile expand button - WB Myk REV */
+div.results__expand{
+    background-color:#000;
+    svg{
+        stroke:#fff;
+    }
+}
+/* END */
+
+//FEATURED AMENITIES
+/* Start - Featured Amenities spacing fix - WB Myk REV */
+div.redesign .features-amenities
+{
+    padding:0;
+}
+@media only screen and (max-width:768px){
+    div.features-amenities-right{
+        div.features-amenities-item:last-child{
+            margin-bottom:0;
+        }
+    }
+}
+/* END */

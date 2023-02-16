@@ -1,0 +1,24 @@
+/* Start - MLS props theming - WB Myk REV */
+button.custom-select-item:hover, button.custom-select-item.is-selected{
+    background-color: #000;
+    color:#fff;
+}
+div.listing-card__status>div{
+    background-color:#000;
+    text-transform:uppercase;
+}
+input.lp-input,button.lp-input{
+    border-color:#000;
+    color:#000;
+    &::placeholder{
+        color:#000!important;
+        opacity:1;
+    }
+}
+div.listing-card__address{
+    text-transform:uppercase;
+}
+div.listing-card__info{
+    background-color:#EBE7E0;
+}
+/* END */

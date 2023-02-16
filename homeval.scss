@@ -1,0 +1,48 @@
+/* Start - Dropdown theming - WB Myk REV */
+div.redesign .inp--dark-bg .custom-select-content{
+    background-color: #fff;
+    button{
+        color:#000;
+    }
+}
+div.redesign .inp--dark-bg{
+    .custom-select-item:focus,
+    .custom-select-item:hover,
+    .custom-select-item.is-selected {
+        background-color: #365989;
+        color:#fff;
+    }
+}
+/* END */
+/* Start - Property label to uppercase - WB Myk REV */
+div.redesign.home-valuation label{
+    text-transform:uppercase;
+}
+/* END */
+
+
+//MASTERPIECE
+/* Start - Dropdown theming - WB Myk REV */
+div.custom-select .lp-input--dark + .custom-select-menu .custom-select-content{
+    background: #fff;
+    button{
+        color:#000;
+        &:hover{
+            color:#fff;
+            background: #484B4D;
+        }
+    }
+}
+input.lp-input--dark,button.lp-input--dark{
+    border-color:#000;
+    &::placeholder{
+        opacity: 1;
+    }
+    &:-webkit-autofill{
+        border-color:#000;
+    }
+}
+button.custom-select-toggle.is-placeholder{
+    color:#000!important;
+}
+/* END */

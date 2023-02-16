@@ -1,0 +1,10 @@
+/* Start - Team grid spacing fix - WB Myk REV */
+@media only screen and (min-width:769px){
+    div.team-member__container{
+        margin-bottom:0;
+    }
+}
+div.team-member__container:last-child{
+    margin-bottom:0;
+}
+/* END */

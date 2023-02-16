@@ -1,0 +1,13 @@
+/* Start - Footer spacing fix - WB Myk REV */
+div.property-list-section .title-container{
+    padding:0;
+}
+/* END */
+/* Start - Property address to uppercase - WB Myk REV */
+div.redesign ul.property-list{
+    margin-bottom:0;
+    .property-list__item h4.serif{
+        text-transform:uppercase;
+    }
+}
+/* END */

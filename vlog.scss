@@ -1,0 +1,23 @@
+/* Start - Video Gallery spacing fix - WB Myk REV */
+h6.video-card__title{
+    letter-spacing: 0!important;
+}
+span.lp-play:after{
+    border-color: transparent transparent transparent #012169;
+}
+div.slick-list{
+    height: unset!important;
+    div.slick-slide>div:last-child{
+        @media only screen and (min-width:769px){
+            div.video-gallery__slide{
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+        div.video-gallery__slide:last-child{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+/* END */

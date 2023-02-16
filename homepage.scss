@@ -1,0 +1,51 @@
+//BOX TEXT
+/* Start - Adjust proper spacing - WB Myk REV */
+div.boxed-text__description{
+    margin-bottom:0;
+    p{
+        margin-bottom:0;
+    }
+}
+/* END */
+
+//GSM
+/* Start - Adjust proper spacing - WB Myk REV */
+div.gallery-component{
+    padding-bottom: 0;
+    .cols-3{
+        @media only screen and (min-width:769px){
+            div.gallery-component__col:nth-last-child(2){
+                margin-bottom:0;
+            }
+            div.gallery-component__col:nth-last-child(3){
+                margin-bottom:0;
+            }
+        }
+        div.gallery-component__col:last-child{
+            margin-bottom:0;
+        }
+    }
+}
+/* END */
+
+//NEWSLETTER SIGNUP
+/* Start - Visible input field and spacing - WB Myk REV */
+input.lp-input{
+    border-color:#000;
+    &::placeholder{
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 768px){
+    div.newsletter-signup {
+        min-height: 60vh;
+    }
+}
+/* END */
+
+//TESTIMONIAL SLIDER
+/* Start - Remove black outline - WB Myk REV */
+div.testimonials .userpic{
+    background-color:transparent;
+}
+/* END */

@@ -1,0 +1,9 @@
+/* Start - Testimonial grid spacing fix - WB Myk REV */
+div.testimonials .container{
+    padding-bottom:0;
+}
+div.testimonials__item:first-child{
+    padding-top:0;
+    margin-top:0;
+}
+/* END */

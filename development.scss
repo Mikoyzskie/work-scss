@@ -1,0 +1,13 @@
+/* Start - Development page proper spacing - WB Myk REV */
+div.container ul.development-list{
+    margin-bottom:0;
+    @media only screen and (min-width:769px){
+        li:nth-last-child(2){
+            margin-bottom:0;
+        }
+    }
+    li:last-child{
+        margin-bottom:0;
+    }
+}
+/* END */
