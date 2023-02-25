@@ -20,4 +20,13 @@ div.slick-list{
         }
     }
 }
+
+div.paginationjs .paginationjs-pages{
+    li:first-child,li:first-child a{
+        border-radius:0 0 0 0;
+    }
+    li:last-child,li:last-child a{
+        border-radius:0 0 0 0;
+    }
+}
 /* END */

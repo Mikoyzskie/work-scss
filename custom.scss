@@ -5,3 +5,34 @@ span.accordion-opener{
         border-color: #012069;
     }
 }
+
+
+//PARALLAX
+/*START - Parallax effect*/
+&{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width: 768px) {
+    &{
+    background-attachment:unset;
+    }
+}
+/*END - Parallax effect*/
+
+//FORM
+.lp-input--dark{
+    border-color:#211f1f;
+    &::placeholder{
+        opacity:1;
+    }
+}
+button.uf-cus-sel-toggle.is-placeholder{
+    color:#211f1f;
+}
+button.uf-cus-sel-item:focus,button.uf-cus-sel-item:hover{
+    background-color:#86745F;
+    color:#fff;
+}

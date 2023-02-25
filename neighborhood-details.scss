@@ -22,3 +22,36 @@ div.listing-card__info{
     background-color:#EBE7E0;
 }
 /* END */
+
+//DEMOGRAPHICS
+/* Start - Demographics spacing fix - WB Myk REV */
+div.tab-section__content{
+    padding-bottom:0;
+}
+/* END */
+
+//SCHOOLS
+/* Start - Visible icons and links - WB Myk REV */
+div.category-wrap{
+    color:#000;
+}
+a.lp-link:after{
+    background-color:#fff;
+}
+div.name-item__heading.name{
+    svg path{
+        fill:#fff;
+    }
+}
+div.type-item__icon{
+    svg path{
+        fill:#002349;
+    }
+}
+div.items-box__filters{
+    border-color:#000;
+}
+div.items-box__content{
+    border-color:#000;
+}
+/* END */

@@ -1,0 +1,42 @@
+div.pagination-style-1{
+    
+    li.active a{
+        background:rgba(134,116,95,1)!important;
+        color:#fff!important;
+        &:hover{
+            background:rgba(134,116,95,1)!important;
+            color:#fff!important;
+        }
+        
+    }
+    li{
+        a{
+            background-color:rgba(134,116,95,0.5)!important;
+            color:#fff!important;
+            border-color:transparent!important;
+            &:hover{
+                background-color:rgba(134,116,95,0.5)!important;
+                color:rgba(134,116,95,1)!important;
+            }
+        }
+    }
+    
+    li.paginationjs-prev a{
+        background-color:transparent!important;
+        &:after{
+            border-color:#86745F!important
+        }
+        &:hover:after{
+            border-color:rgba(134,116,95,0.5)!important;
+        }
+    }
+    li.paginationjs-next a{
+        background-color:transparent!important;
+        &:after{
+            border-color:#86745F!important
+        }
+        &:hover:after{
+            border-color:rgba(134,116,95,0.5)!important;
+        }
+    }
+}
