@@ -15,11 +15,43 @@ input.lp-input,button.lp-input{
         opacity:1;
     }
 }
+div.range-slider{
+    span.irs--round .irs-handle:hover {
+        background-color: #000;
+        i{
+            background-color: #fff!important;
+        }
+    }
+}
+
 div.listing-card__address{
     text-transform:uppercase;
 }
 div.listing-card__info{
     background-color:#EBE7E0;
+}
+
+@media only screen and (min-width:760px){
+    div.properties-grid__item{
+        &:nth-last-child(2){
+            a.listing-card{
+                margin-bottom:0;
+            }
+        }
+        &:nth-last-child(3){
+            a.listing-card{
+                margin-bottom:0;
+            }
+        }
+    }
+}
+
+div.properties-grid__item{
+    &:last-child{
+        a.listing-card{
+            margin-bottom:0;
+        }
+    }
 }
 /* END */
 

@@ -8,3 +8,30 @@ div.team-member__container:last-child{
     margin-bottom:0;
 }
 /* END */
+
+
+//AGENT DETAILS
+
+div.redesign .agent-info{
+    padding:0;
+}
+div.redesign .agent-info-details .details-list li a{
+    &:hover{
+        color:#7C7A61;
+        &:after{
+            background-color:#7C7A61;
+        }
+    }
+}
+
+@media (max-width: 540px){
+    div.redesign .agent-info-bio .socials.socials--light-grey{
+        li{
+            width:unset!important;
+            padding:5px;
+        }
+        padding-right:0;
+        justify-content:center;
+        
+    }
+}

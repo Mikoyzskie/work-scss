@@ -14,6 +14,11 @@ div#modal-global-contact-us{
             background: #fff;
         }
     }
+    @media only screen and (max-width:768px){
+        div.redesign .socials{
+            justify-content: center;
+        }
+    }
 }
 /* END */
 /* Start - Contact modal spacing fix - WB Myk REV */
@@ -26,3 +31,21 @@ div#modal-global-contact-us .contact-form .info-zone .type_user:nth-of-type(2) {
     }
 }
 /* END */
+
+
+//MASTERPIECE
+
+div#modal-global-contact-us{
+    .contact-form__close{
+        opacity: 1;
+    }
+    .lp-input{
+        border-color:#fff;
+        &::placeholder{
+            opacity: 1;
+        }
+    }
+    .company{
+        color:#000;
+    }
+}

@@ -1,10 +1,16 @@
 //BOX TEXT
 /* Start - Adjust proper spacing - WB Myk REV */
+/* Start - Adjust proper spacing - WB Myk REV */
 div.boxed-text__description{
     margin-bottom:0;
     p{
         margin-bottom:0;
     }
+}
+/* END */
+
+div.lp-title-group .lp-h2{
+    margin-top:0;
 }
 /* END */
 
@@ -48,6 +54,10 @@ input.lp-input{
 div.testimonials .userpic{
     background-color:transparent;
 }
+
+h4.author{
+    text-transform:uppercase;
+}
 /* END */
 
 //FEATURED VIDEO SHARE
@@ -81,3 +91,4 @@ div.featured-video__content .buttons-container .share-container .share-wrapper{
         padding-bottom:144px;
     }
 }
+
