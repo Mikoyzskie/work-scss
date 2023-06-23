@@ -8,6 +8,12 @@ div.results__expand{
 }
 /* END */
 
+li.legend__item.is-hovered{
+    .legend__name,span{
+        opacity: 1!important;
+    }
+}
+
 //FEATURED AMENITIES
 /* Start - Featured Amenities spacing fix - WB Myk REV */
 div.redesign .features-amenities
@@ -20,5 +26,106 @@ div.redesign .features-amenities
             margin-bottom:0;
         }
     }
+}
+/* END */
+
+
+//SS
+
+/* Scheduling a Property Theme*/
+/* Change slick arrow theme  */
+.schedule .step .calendar {
+    .lp-arrow{
+        border-color: #002349;
+    }
+    .lp-arrow:before{
+        border-color: #002349;
+    }
+    .lp-arrow:hover{
+        border-color: #002349;
+        background: #002349;
+    }
+    .lp-arrow:hover:before{
+        border-color: #fff;
+    }
+}
+
+/* Calendar Item theme*/
+.schedule .step .calendar {
+    .calendar__item{
+        border-color: #002349;
+    }
+    .selected .calendar__item{
+        background-color: #002349;
+        color:#fff;
+    }
+}
+
+/* Hour select change color */
+.custom-select-toggle {
+    border-color: #002349;
+    color: #000;
+    &:after {
+        border-color: #002349;
+    }
+}
+.custom-select-content .custom-select-item {
+    background: #fff;
+    color: #000;   
+}
+.custom-select-content .custom-select-item:hover {
+    background: #002349;
+    color:#fff;
+}
+
+.select-holder .input-icon{
+    filter: invert(1);
+}
+/* Change scroll bar theme */
+.custom-select-content {
+        &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #002349!important;
+    }
+    &::-webkit-scrollbar-thumb {
+    background-color: #002349;
+    outline: none;
+    }  
+}
+
+/* Change label buttons */
+.schedule .step .type-selector {
+    label.lp-btn {
+    border-color: #002349; 
+    color: #002349;
+    }
+    label.lp-btn:hover {
+    border-color: #002349;
+    background: #002349;
+    color: #fff;
+    }
+}
+
+
+/* Input form */
+.schedule__form .step-2 .info-form{
+    input {
+        border-color: #3c3c3c;
+        color: #000;
+    }
+    input:focus{
+           border-color: #000;
+    }
+}
+
+.info-form .btn-submit {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.schedule-reset.js-btn-reset:after{
+    background-color: #002349;
 }
 /* END */

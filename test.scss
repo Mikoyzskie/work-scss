@@ -1,204 +1,4 @@
-/*Footer space, mobile view logo and mobile view footer space - WB Jen */
-footer#global-footer {
-  
-	.footer.no_newsletter .info-wrap-contact_zone:first-of-type {
-		margin-bottom: 21px;
-	}
-	.info-wrap-contact_zone {
-            margin-bottom: 21px;
-    	}
-	@media only screen and (max-width: 768px) {
-		.footer.no_newsletter .info-wrap-contact_zone:first-of-type {
-                margin-bottom: 20px;
-		    }
-        }
-    @media only screen and (max-width: 768px) {
-        .info-wrap-contact_zone {
-            margin-bottom: 0;
-	}
-    }
-    @media only screen and (max-width: 768px) {
-        .footer.no_newsletter h3 {
-            margin-bottom: 20px;
-        }
-    }
-}
-footer .luxury-link {
-    font-weight: 400;
-}
-footer .footer .info-privacy .copy_zone a {
-    font-weight: 400;
-}
-/*end*/
-
-a.hyperlink-style-2:after{
-    background-color:#fff;
-}
-
-/*Contact overlay space and mobile view contact overlay - WB Jen */
-div#modal-global-contact-us .contact-form {
-        .info-zone {
-            .info-zone_contact_cell {
-                margin-bottom: 21px;
-            }
-                .type_user:nth-of-type(2) {
-                    margin-bottom: 21px;
-                }
-                .type_user {
-                        @media only screen and (max-width: 768px) {
-                                margin-bottom: 25px;
-                            }
-                }
-        }
-        .info-zone_contact {
-                    margin-bottom: 14px;
-        }
-        .section-message h2 {
-            font-size: 38px;
-            @media only screen and (max-width: 768px) {
-                font-size: 28px;
-            }
-        }
-    h2 {
-        font-size: 38px;
-        @media only screen and (max-width: 768px) {
-           font-size: 28px;
-        }
-    }
-}
-/*end*/
-
-/*START - Contact overlay link underline*/
-div#modal-global-contact-us a:not(.socials__item){
-    position: relative!important;
-    &:before, &:after{
-        transition: 0.4s;
-        text-decoration: none!important;
-        line-height: 1;
-        content: "";
-        height: 1px;
-        position: absolute!important;
-        bottom: 0;
-        left: 0;
-    }
-    &:before {
-        width: 100%!important;
-        background-color: #999!important;
-    }
-    &:after{
-        width: 0%!important;
-        background-color: #fff!important; 
-    }
-    &:hover:after{
-        width: 100%!important;
-    }
-}
-/*END - Contact overlay link underline*/
-
-/*START - header nav logo size adjustment - WE Jen*/
-nav#global-navbar .header .logo img {
-    @media only screen and (min-width:768px){
-        max-height: 80px;
-    }
-}
-/*START - header nav logo size adjustment*/
-
-/* START - Make mobile buttons client's themed - WB Jen */
-body>div.mobile-contact-wrapper div.mobile-contact a {
-    border: 2px solid #50BBE7;
-    background-color: #50BBE7;
-}
-body>div.mobile-contact-wrapper div.mobile-contact a i {
-    color:#fff!important;
-}
-/* END - Make mobile buttons client's themed */
-
-/*START - footer theming*/
-#global-footer{
-    div.footer{
-        .info-wrap{
-            &-contact_zone svg path{
-                fill: #50BBE7;
-            }
-        
-            &-contact_title{
-                    color:#50BBE7;
-            }
-            .contact_title{
-                    color:#50BBE7;
-            }
-        }
-    }
-}
-
-#global-footer{
-    .footer{
-        .info-privacy{
-            @media only screen and (min-width: 769px){
-                border-top: 1px solid #50BBE7;                
-            }
-            @media only screen and (max-width: 768px){
-                .socials_zone {
-                    margin-top: 25px;
-    
-                }
-                .copy_zone {
-                    border-top: 1px solid #50BBE7;
-                }
-            }
-        }
-        
-    }
-}
-/*End- footer line color*/
-
-/*START - change header nav color*/
-nav#global-navbar{
-    .header .navigation .sub-nav ul {
-        background-color: transparent;
-        li{
-            background-color: rgba(255,255,255,0.9);
-            &:hover{
-                background-color: rgba(255,255,255,1);
-            }
-        }
-        
-        a{
-            color:#000; 
-        } 
-    }
-    &.scroll{
-        background-color: #000!important;
-        li.navigation__item a.navigation__link{
-            color:#fff;
-            & span:after{
-                background-color: #fff;
-            }
-        }
-        button.hamburger-component.hamburger{
-            color: #50BBE7;
-        }
-    }
-}
-/*END - Change Header nav color*/
-
-/* Start To make the button's padding consistent - WB Jen*/
-.redesign .btn--small {
-    padding: 20px 46px!important;
-}
-.lp-btn {
-    padding: 20px 46px!important;
-}
-button.newsletter-signup__form-item{
-    line-height: 1;
-    font-weight: 700;
-}
-#modal-global-contact-us .contact-form .section-message form .submitButton {
-    padding: 14px 20px;
-}
-/*End To make the button's padding consistent*/
-
-/*START - Makes Global Font uppercase  - WE Jen*/
+/*START - Makes Global Font uppercase*/
 h1{
     text-transform:uppercase!important;
 }
@@ -208,21 +8,23 @@ h1{
 
 h2{
     text-transform:uppercase!important;
+    font-size: 43px;
 }
 .lp-h2{
     text-transform:uppercase!important;
+    font-size: 43px;
 }
 h3{
     text-transform:uppercase!important;
+    font-size: 33px;
 }
 .lp-h3{
-text-transform:uppercase!important;
+    text-transform:uppercase!important;
+    font-size: 33px;
 }
-h4 {
-    text-transform: uppercase!important;
-}
-/*START - Sidemenu font */
-div#global-sidemenu.sidemenu{
+
+/*START - Sidemenu & header nav font */
+div#global-sidemenu.sidemenu,nav#global-navbar{
     & a{
         text-transform:uppercase;
     }
@@ -230,43 +32,285 @@ div#global-sidemenu.sidemenu{
         text-transform:uppercase;
     }
 }
-/*END - Makes Global Font uppercase  - WE Jen*/
+/*END - Sidemenu & header nav font*/
 
-/*START Fit SUBMIT A MESSAGE in 1 line - WE Jen*/
-div#modal-global-contact-us .contact-form{
-    .section-message form {
-        max-width: 490px;
-    }
+/*START - removing dash on all hyperlink*/
+.hyperlink-style-1:before, .hyperlink-style-2:before {
+    content: ""!important;
 }
-@media only screen and (max-width: 768px){
-        div#modal-global-contact-us .contact-form .section-message h2 {
-          max-width: 462px;
-        }
-}
-/*END Fit SUBMIT A MESSAGE in 1 line - WE Jen*/
+/*END - removing dash on all hyperlink*/
 
-/*START Contact Overlay x - WE Jen*/
-#modal-global-contact-us .close {
-    right: 4vw;
-    top: 7vh;
-    width: 2.9em;
-}
-/*END Contact Overlay x - WE Jen*/
-
-/*START - avoid title to put on next line & reduce font-size on mobile view - WB Jen*/
-div#modal-global-contact-us{
-    .contact-form{
-        .section-message form {
-            max-width: 490px;
-        }
-        h2 {
-            @media only screen and (max-width:1080px){
-                font-size: 37px;
+/* START - fix x button in contact overlay*/
+@media only screen and (max-width: 1024px) {
+    #modal-global-contact-us {
+        div.contact-form{
+            &__container {
+                width: 100%;
             }
-            @media only screen and (max-width:925px){
-                font-size: 28px;
+            &__close.close {
+                color: #CBA751;
+                opacity: 1;
             }
         }
     }
 }
-/*START - reduce font-size on mobile view*/
+/* END - fix x button in contact overlay*/
+
+/* START - contact overlay theme*/
+#modal-global-contact-us div.input-container{
+    input.lp-input,textarea{
+        &:-webkit-autofill{
+            &:focus {
+            color: #000;
+            }
+            -webkit-text-fill-color: #000;
+        }
+        color: #000;
+        border-color: #000;
+    }
+    span.input-icon{
+        filter:invert(1);
+    }
+}
+/* END - contact overlay theme*/
+
+/* start - make EHO and Realtor logo black */
+#global-footer .site-footer__disclaimer {
+    opacity: 1;
+    color: #000;
+    &:after{
+        background-color:#000;
+        opacity: 1;
+    }
+}
+/*end*/
+
+/*START - footer link theme and underline- WB Erickson*/
+footer#global-footer{
+    a:not(.socials__item),.link,.footer-navigation__link{
+        text-decoration: none;
+        position: relative!important;
+        color:#000!important;
+        &:hover{
+            color:#CBA751!important;
+            opacity:1!important;
+        }
+        &:before, &:after{
+            transition: 0.4s;
+            text-decoration: none!important;
+            line-height: 1;
+            content: "";
+            height: 1px;
+            position: absolute!important;
+            bottom: 0;
+            left: 0;
+        }
+        &:before {
+            width: 100%!important;
+            background-color: #ccc!important;
+            opacity:1;
+        }
+        &:after{
+            width: 0%!important;
+            background-color: #CBA751!important; 
+        }
+        &:hover:after{
+            width: 100%!important;
+        }
+        @media only screen and (max-width: 1280px){
+            overflow-wrap: anywhere;
+            text-decoration: underline!important;
+            white-space: normal!important;
+                &:before {
+                    background-color: transparent;
+                    width: 0%!important;
+                }
+                &:after {
+                    background-color: transparent;
+                }
+            &:hover:after{
+                width: 0%!important;
+            }
+        }
+    }
+    div.site-footer__copy div:nth-child(2) a,.footer-navigation__link{
+        padding-bottom:5px!important;
+    }
+}
+
+footer div.site-footer__col-content {
+    opacity: 1;
+}
+/*END - footer link theme and underline-*/
+
+/*START - increase header logo size*/
+@media only screen and (min-width:534px){
+       nav#global-navbar .header__logo a.logo{
+        width: 500px;
+        height: 94px!important;
+        max-width: 500px;
+        & .logo__img {
+            width: 500px;
+            height: 94px;
+        }
+    } 
+}
+/* END */
+
+/* START - header nav theme*/
+nav#global-navbar{
+        /* START - default state - homepage header nav*/
+    .header.theme-light{
+        .header__hamburger{
+            circle {
+                fill: #EBE7E0;
+            }
+            svg rect{
+                fill:#CBA751!important;
+            }
+        }
+        ul.navigation li.navigation__item{
+            a.navigation__link{
+                color:#fff;
+                &:hover{
+                    color:#dedede!important;
+                }
+            }
+            &:after {
+                border-color: #fff;
+            }
+            .sub-nav__link {
+                color: #000;
+                background-color: #fff;
+            }
+            .sub-nav__link:hover {
+                color: #FFF;
+                background-color: #7782ac;
+            }
+            .navigation__link:after{
+                background: #fff;
+            }
+        }
+    }
+    /* END- default state - homepage header nav*/
+
+    /* START- default state - other pages header nav(property details+home val)*/
+    .header{
+        .header__hamburger{
+            circle {
+                fill: #EBE7E0;
+            }
+            svg rect{
+                fill:#CBA751!important;
+            }
+        }
+        ul.navigation li.navigation__item{
+            a.navigation__link{
+                color:#000;
+                &:hover{
+                    color:#777!important;
+                }
+            }
+            &:after {
+                border-color: #7782ac;
+            }
+            .sub-nav__link {
+                color: #000;
+                background-color: #fff;
+            }
+            .sub-nav__link:hover {
+                color: #FFF!important;
+                background-color: #7782ac;
+            }
+            .navigation__link:after{
+                background: #7782ac;
+            }
+        }
+    }
+    /* END - default state - other pages header nav(property details+home val)*/
+
+    /* START - scrolled state header nav in all pages(including homepage)*/
+    &.scroll .header{
+        background-color: #EBE7E0;
+        .header__hamburger{
+            circle {
+                fill: #CBA751;
+            }
+            svg rect{
+                fill:#fff!important;
+            }
+        }
+        ul.navigation li.navigation__item{
+            a.navigation__link{
+                color:#000;
+                &:hover{
+                    color:#CBA751!important;
+                }
+            }
+            &:after {
+                border-color: #CBA751;
+            }
+            .sub-nav__link {
+                color: #000;
+                background-color: #fff;
+            }
+            .sub-nav__link:hover {
+                color: #FFF!important;
+                background-color: #CBA751;
+            }
+            .navigation__link:after{
+                background: #CBA751;
+            }
+        }
+    }
+    /* ENd - scrolled state header nav in all pages(including homepage)*/
+}
+/* END - header nav theme*/
+
+/*START - display dark logo on scrolled state */
+nav#global-navbar.scroll {
+    .header.theme-light .logo__img.light {
+        display: none;
+    }
+    .header.theme-light .logo__img.dark {
+        display: block;
+    }
+    .header.theme-auto .logo__img.light {
+        display: none;
+    }
+    .header.theme-auto .logo__img.dark {
+        display: block;
+    }
+}
+/*END - display dark logo on scrolled state */
+
+/*START - CTA icon color on mobile view */
+div#global-mobile-contact .item{
+    background-color:#CBA751;
+    border: 2px solid #CBA751;
+    color:#fff;
+    svg{
+        fill:#fff;
+    }
+    &:hover{
+        background-color: #CBA751;
+        border: 2px solid #CBA751;
+        svg{
+            fill:#fff;
+        }
+        color:#fff;
+    }
+}
+/*END - CTA icon color on mobile view */
+
+/* Header, Increase Header Logo */
+nav#global-navbar .header .header__logo a.logo{
+    max-width: 360px;
+    height: 80px;
+    }
+@media screen and (max-width: 768px){
+nav#global-navbar .header .header__logo{
+    width: 190px;
+    }
+}
+/* END */

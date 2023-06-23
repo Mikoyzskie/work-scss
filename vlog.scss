@@ -30,3 +30,43 @@ div.paginationjs .paginationjs-pages{
     }
 }
 /* END */
+
+
+//BLOG
+
+div.blog-list__container .blog-list__item:last-child{
+    margin-bottom:0;
+    div.blog-list__item-content{
+        padding-bottom:0;
+    }
+}
+
+div.blog-list__item-content h4:after{
+    background-color:#D03238;
+}
+
+
+@media only screen and (min-width:1024px){
+    div.blog-grid{
+        .col:nth-last-child(2) .blog-item{
+            margin-bottom: 0;
+            p.blog-item__description{
+                margin-bottom: 0;
+            }
+        }
+        .col:nth-last-child(3) .blog-item{
+            margin-bottom: 0;
+            p.blog-item__description{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+div.blog-grid{
+    .col:last-child .blog-item{
+        margin-bottom: 0;
+        p.blog-item__description{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -38,14 +38,29 @@ div#modal-global-contact-us .contact-form .info-zone .type_user:nth-of-type(2) {
 div#modal-global-contact-us{
     .contact-form__close{
         opacity: 1;
+        @media only screen and (max-width:768px){
+            color: #fff;
+        }
     }
+    // .input-container .lp-input ~ .input-icon{
+    //     filter:invert(1);
+    // }
     .lp-input{
         border-color:#fff;
+        text-transform: uppercase;
         &::placeholder{
             opacity: 1;
         }
     }
     .company{
         color:#000;
+    }
+    @media only screen and (max-width:768px){
+        .company p{
+            text-align:center;
+        }
+        .contact-form__title2{
+            text-align:center;
+        }
     }
 }

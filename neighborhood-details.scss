@@ -7,14 +7,8 @@ div.listing-card__status>div{
     background-color:#000;
     text-transform:uppercase;
 }
-input.lp-input,button.lp-input{
-    border-color:#000;
-    color:#000;
-    &::placeholder{
-        color:#000!important;
-        opacity:1;
-    }
-}
+
+
 div.range-slider{
     span.irs--round .irs-handle:hover {
         background-color: #000;
@@ -55,6 +49,39 @@ div.properties-grid__item{
 }
 /* END */
 
+
+// overview
+
+p.item__name--hint::after{
+    background-color: #f8c731!important;
+}
+
+span.hint{
+    background-color: #f8c731!important;
+    &:after{
+       background-color: #f8c731!important; 
+    }
+}
+
+
+div.tab .overview-item__name--hint::after{
+    background-color: #f8c731!important;
+}
+
+
+div.score__help{
+    button svg path{
+        fill:#2A505D!important;
+    }
+    .tippy-content{
+        background-color:#2A505D!important;
+        
+    }
+}
+div.tippy-arrow:before{
+    border-top-color:#2A505D!important;
+}
+
 //DEMOGRAPHICS
 /* Start - Demographics spacing fix - WB Myk REV */
 div.tab-section__content{
@@ -66,6 +93,13 @@ div.tab-section__content{
 /* Start - Visible icons and links - WB Myk REV */
 div.type-list__item,div.type-list__item:hover{
     border-color:#000;
+}
+
+div.btn-wrap{
+    margin-top: 0;
+    button{
+        margin-top: 32px;
+    }
 }
 
 div.category-wrap{
@@ -107,4 +141,16 @@ div.tab-section:not(:last-child){
 
 div.tab .overview-item{
     border-color:#473729; 
+}
+
+
+//POI
+
+span.tag{
+    background-color: #000;
+    color:#fff;
+}
+
+div.stars .star.is-filled {
+    background-color: #000;
 }

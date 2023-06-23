@@ -1,5 +1,19 @@
+div.collection{
+    justify-content: flex-start;
+    .btn-container{
+        margin-top:0;
+        a{
+            min-width:240px;
+        }
+    }
+    .lp-title-group{
+        margin-bottom:10px;
+    }
+}
+
+
 //BOX TEXT
-/* Start - Adjust proper spacing - WB Myk REV */
+
 /* Start - Adjust proper spacing - WB Myk REV */
 div.boxed-text__description{
     margin-bottom:0;
@@ -14,7 +28,72 @@ div.lp-title-group .lp-h2{
 }
 /* END */
 
+div.featured-properties-section .btn {
+    min-width: unset;
+    @media only screen and (max-width:768px){
+        width:100%;
+    }
+}
+
+div.featured-properties-button-holder{
+    line-height:0;
+}
+
+
 //GSM
+/* Gallery style menu theme - WB MYK*/
+div.gallery-component__col .gallery-card__title {
+    text-align: center;
+    font-size: 26px;
+    text-transform: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 20px;
+  
+    text-transform: uppercase;
+    &::after {
+      display:none;
+    }
+  }
+  
+  div.row.gallery-component__row.cols-3 .gallery-component__col {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  div.gallery-component__col .gallery-card {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 360px;
+    &::before {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.95)
+      ) !important;
+
+      
+    }
+  }
+  
+  @media (max-width: 768px) {
+    div.gallery-component__col .gallery-card {
+      position: relative;
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+      height: 360px;
+    }
+    div.row.gallery-component__row.cols-3 .gallery-component__col {
+      max-width: 100%;
+      flex-basis: 100%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  /*END - Gallery style menu*/
 /* Start - Adjust proper spacing - WB Myk REV */
 div.gallery-component{
     padding-bottom: 0;
@@ -34,6 +113,11 @@ div.gallery-component{
 }
 /* END */
 
+//gallery white opacity
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 76.6%, #fff);
+    opacity: 0.6;
+    background-color: rgba(0,0,0,0.5); */
+
 //NEWSLETTER SIGNUP
 /* Start - Visible input field and spacing - WB Myk REV */
 input.lp-input{
@@ -42,9 +126,20 @@ input.lp-input{
         opacity: 1;
     }
 }
+div.lp-title-group .lp-h2{
+    margin-top:0;
+}
+
+button.newsletter-signup__form-item.lp-btn {
+    font-weight: 600;
+}
 @media only screen and (max-width: 768px){
     div.newsletter-signup {
         min-height: 60vh;
+
+    }
+    div.lp-title-group{
+        padding:0;
     }
 }
 /* END */
@@ -92,3 +187,8 @@ div.featured-video__content .buttons-container .share-container .share-wrapper{
     }
 }
 
+@media only screen and (max-width: 560px){
+    div.redesign.work-with-us .btn-container {
+        width: 100%;
+    }
+}

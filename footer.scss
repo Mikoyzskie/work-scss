@@ -1,26 +1,11 @@
 /* Start - Footer styling - WB Myk REV */
 footer#global-footer .footer{
-    .hvr_animation.underlined{
-        &:after{
-            width: 0;
-        }
-        &:hover{
-            width: 100%;
-            &:after{
-                width: 100%;
-            }
-        }
-    }
+    
     .info-privacy{
         border-color:#000;
         .copy_zone{
             border-color:#000;
-            a{
-                color:#000;
-                &:hover{
-                    color:#1a1a1a;
-                }
-            }
+            
         }
     }
 }
