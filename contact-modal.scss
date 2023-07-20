@@ -39,7 +39,9 @@ div#modal-global-contact-us{
     .contact-form__close{
         opacity: 1;
         @media only screen and (max-width:768px){
-            color: #fff;
+            &.close{
+                color: #fff;
+            }
         }
     }
     // .input-container .lp-input ~ .input-icon{

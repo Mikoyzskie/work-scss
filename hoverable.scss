@@ -1,0 +1,35 @@
+div.hoverable-image--reverse .hoverable-image__text-col{
+    padding-right: 0!important;
+    .buttons-wrapper{
+        justify-content: center;
+    }
+    .hoverable-image__text-wrap{
+        height: 100%;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 30px!important;
+        @media only screen and (max-width:768px){
+            padding: 10px!important;
+        }
+        border: 1px solid #E60E11;
+    }
+    background-color: #f2f2f2;
+    padding: 30px!important;
+    @media only screen and (max-width:768px){
+        padding: 10px!important;
+    }
+}
+
+@media only screen and (max-width:992px){
+    div.hoverable-image__img-col>div {
+        min-height:unset!important;
+        padding-bottom:100%;
+    }
+    div.hoverable-image--reverse .hoverable-image__text-col{
+        margin-top:0;
+    }
+    
+}

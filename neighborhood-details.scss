@@ -58,6 +58,7 @@ p.item__name--hint::after{
 
 span.hint{
     background-color: #f8c731!important;
+    color:#fff;
     &:after{
        background-color: #f8c731!important; 
     }
@@ -72,6 +73,7 @@ div.tab .overview-item__name--hint::after{
 div.score__help{
     button svg path{
         fill:#2A505D!important;
+        cursor:pointer;
     }
     .tippy-content{
         background-color:#2A505D!important;
@@ -102,6 +104,16 @@ div.btn-wrap{
     }
 }
 
+/*START - stars color*/
+div.rate-item .star-row:before {
+    background: linear-gradient(90deg, #5F4314 var(--percent), #EBE7E0 var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*ENd - stars color*/
+div.category-wrap{
+    background-color:transparent;
+}
 div.category-wrap{
     color:#000;
 }
@@ -147,8 +159,8 @@ div.tab .overview-item{
 //POI
 
 span.tag{
-    background-color: #000;
-    color:#fff;
+    background-color: transparent;
+    color:#000;
 }
 
 div.stars .star.is-filled {

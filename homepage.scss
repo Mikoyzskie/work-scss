@@ -192,3 +192,13 @@ div.featured-video__content .buttons-container .share-container .share-wrapper{
         width: 100%;
     }
 }
+
+@media (max-width: 768px){
+    div.button-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        a{
+            width: 100%;
+        }
+    }
+}

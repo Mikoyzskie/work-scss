@@ -1,0 +1,39 @@
+//SMART
+div.gjs-row{
+    margin:0;
+    div.gjs-cell.div_line{
+        p{
+            margin-bottom:0;
+        }
+    }
+    h3{
+        margin-bottom:0;
+    }
+}
+
+
+//SUCCESS STORIES
+div.f-video .play-btn .play-icon{
+    color:#AB7AF5;
+}
+@media only screen and (max-width:768px){
+    h2{
+        font-size:32px;
+    }
+    div.f-video-poster{
+        margin-top:0;
+    }
+}
+
+//STATS
+div.stats{
+    .container{
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+h2.stats__title{
+    margin:0;
+}
