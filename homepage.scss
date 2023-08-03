@@ -202,3 +202,21 @@ div.featured-video__content .buttons-container .share-container .share-wrapper{
         }
     }
 }
+
+
+
+
+//Work with us custom
+
+@media only screen and (min-width:1024px){
+    .work-with-us .container {
+        margin: 5% auto;
+        min-height: 580px!important;
+        border: 1px solid #fff;
+    }
+}
+@media only screen and (max-width:768px){
+    div.redesign.work-with-us .btn-container{
+        width:100%;
+    }
+}

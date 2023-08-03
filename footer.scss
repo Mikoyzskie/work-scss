@@ -25,3 +25,51 @@ footer#global-footer .footer.no_newsletter .info-wrap-contact_zone:first-of-type
     }
 }
 /* END */
+
+
+
+
+
+//CUSTOM
+
+
+footer#global-footer .footer.no_newsletter .info-wrap-contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer#global-footer .footer .info-wrap-contact_zone{
+    &:first-of-type{
+        flex: 1 0 50%;
+        justify-content: space-between;
+        .info-wrap-contact_cell{
+            width: auto!important;
+            &:last-child .contact_title{
+                
+                font-size: 0;
+                &:before{
+                    content: "Mobile";
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &:nth-child(2){
+        flex: 1 0 50%;
+        @media only screen and (min-width:768px){
+            justify-content: center;
+        }
+        .info-wrap-contact_cell{
+            width: auto!important;
+        }
+    }
+    &:last-child{
+        display: flex;
+        flex:100%;
+        .info-wrap-contact_cell{
+            width: 100%!important;
+        }
+    }
+}

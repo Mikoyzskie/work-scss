@@ -193,3 +193,104 @@ div.hoverable-image--reverse .hoverable-image__text-col{
         }
     }
 }
+
+
+
+hr{
+    height: 1px;
+    width: 100%;
+    left: 60%;
+    margin: auto;
+    top: auto;
+    bottom: auto;
+    background: #fff;
+    position: absolute;
+}
+
+
+
+
+//////
+// <div class="title-sereno" style="text-align: left;"><hr />
+// <h2 style="text-align: left;">Our Funds</h2>
+// </div>
+hr{
+    height: 1px;
+    width: 100%;
+    bottom: auto;
+    background: #DA291C;
+}
+
+div.title-sereno{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    hr{
+        flex: 100%;
+        max-width:950px;
+    }
+    @media only screen and (max-width:768px){
+        flex-direction:column-reverse;
+        hr{
+            flex: auto;
+        }
+    }
+    
+}
+
+div.button-container {
+    display:none;
+}
+
+
+////////
+hr{
+    height: 1px;
+    width: 100%;
+    bottom: auto;
+    margin-bottom:5px;
+    background: #fff;
+}
+
+h2{
+    margin-bottom:5px;
+}
+
+div.title-gables{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+    align-items:center;
+    h2{
+        max-width:580px;
+        width:100%;
+        text-align:center! important;
+    }
+    hr{
+        flex: auto;
+        width:auto;
+    }
+    @media only screen and (max-width:768px){
+        flex-direction:column-reverse;
+        hr{
+            flex: auto;
+            &:last-child{
+                display:none;
+            }
+        }
+    }
+    
+}
+
+div.button-container {
+    display:none;
+}
+
+/* Start - Adjust proper spacing - WB Myk REV */
+div.boxed-text__description{
+    margin-bottom:0;
+    p{
+        margin-bottom:0;
+    }
+}

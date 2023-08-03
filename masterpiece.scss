@@ -1,565 +1,311 @@
-/* START Footer Disclaimer color - WB myk*/
-#global-footer .site-footer__disclaimer {
-    opacity: 1;
-    color: #000;
-}
-/* END Footer Disclaimer color - WB myk*/
-
-/* START Header Nav Link - WB Jenwell*/
-nav#global-navbar .navigation__link {
-    max-width: 230px;
-    text-transform: uppercase;
-}
-/* END Header Nav Link - WB Jenwell*/
-
 /*START - increase logo size - WB myk*/
 @media only screen and (min-width:534px){
-       nav#global-navbar .header__logo a.logo{
-        width: 300px;
-        height: 80px;
-        max-width: 300px;
-        & .logo__img {
-            width: 300px;
-            height: 80px;
-        }
-    } 
+    nav#global-navbar .header__logo a.logo{
+     width: 300px;
+     height: 80px;
+     max-width: 300px;
+     & .logo__img {
+         width: 300px;
+         height: 80px;
+     }
+ } 
 }
 
 @media only screen and (max-width: 768px){
- nav#global-navbar .logo {
-    width: 234px;
+nav#global-navbar .logo {
+ width: 234px;
 }
 }
 /*END- increase logo size - WB myk*/
 
 /* START - header nav theme - WB myk*/
 nav#global-navbar{
-        /* START - default state - homepage header nav*/
-    .header.theme-light{
-        .header__hamburger{
-            circle {
-                fill: #B19667;
-            }
-            svg rect{
-                fill:#fff!important;
-            }
-        }
-        ul.navigation li.navigation__item{
-        color:#fff;
-            .sub-nav__link {
-                color: #FFF;
-                background-color: #B19667;
-            }
-            .sub-nav__link:hover {
-                color: #FFF;
-                background-color: #B19667;
-            }
-            .navigation__link:after{
-                background: #fff;
-            }
-        }
-        .search__btn svg {
-            color:#fff;
-        }
-        a.header__btn-contact{
-            background: transparent;
-            color: #fff!important;
-            border-color: #fff!important;
-            &:hover{
-                background: #fff!important;
-                color: #B19667!important;
-                border-color: #fff!important;
-            }
-        }
-    }
-    /* END- default state - homepage header nav*/
+     /* START - default state - homepage header nav*/
+ .header.theme-light{
+     .header__hamburger{
+         circle {
+             fill: #b19a55;
+         }
+         svg rect{
+             fill:#fff!important;
+         }
+     }
+     ul.navigation li.navigation__item{
+     color:#fff;
+         .sub-nav__link {
+             color: #000;
+             background-color: #fff;
+         }
+         .sub-nav__link:hover {
+             color: #FFF;
+             background-color: #b19a55;
+         }
+         .navigation__link:after{
+             background: #fff;
+         }
+     }
+     .search__btn svg {
+         color:#fff;
+     }
+     a.header__btn-contact{
+         background: transparent;
+         color: #fff!important;
+         border-color: #fff!important;
+         &:hover{
+             background: #fff!important;
+             color: #B19667!important;
+             border-color: #fff!important;
+         }
+     }
+ }
+ /* END- default state - homepage header nav*/
 
-    /* START- default state - other pages header nav(property details+home val)*/
-    .header{
-        .header__hamburger{
-            circle {
-                fill: #B19667;
-            }
-            svg rect{
-                fill:#fff!important;
-            }
-        }
-        ul.navigation li.navigation__item{
-        color:#fff;
-            .sub-nav__link {
-                color: #FFF;
-                background-color: #B19667;
-            }
-            .sub-nav__link:hover {
-                color: #FFF;
-                background-color: #B19667;
-            }
-            .navigation__link:after{
-                background: #fff;
-            }
-        }
-        .search__btn svg {
-            color:#B19667;
-        }
-    }
-    /* END - default state - other pages header nav(property details+home val)*/
+ /* START- default state - other pages header nav(property details+home val)*/
+ .header{
+     .header__hamburger{
+         circle {
+             fill: #b19a55;
+         }
+         svg rect{
+             fill:#fff!important;
+         }
+     }
+     ul.navigation li.navigation__item{
+     color:#000;
+         .sub-nav__link {
+             color: #000;
+             background-color: #fff;
+         }
+         .sub-nav__link:hover {
+             color: #FFF;
+             background-color: #b19a55;
+         }
+         .navigation__link:after{
+             background: #b19a55;
+         }
+     }
+     .search__btn svg {
+         color:#B19667;
+     }
+ }
+ /* END - default state - other pages header nav(property details+home val)*/
 
-    /* START - scrolled state header nav in all pages(including homepage)*/
-    &.scroll .header{
-        background-color: #fff;
-        .header__hamburger{
-            circle {
-                fill: #B19667;
-            }
-            svg rect{
-                fill:#fff!important;
-            }
-        }
-        ul.navigation li.navigation__item{
-        color:#000;
-            .sub-nav__link {
-                color: #fff;
-                background-color: #B19667;
-            }
-            .sub-nav__link:hover {
-                color: #fff;
-                background-color: #B19667;
-            }
-            .navigation__link:after{
-                background: #B19667;
-            }
-        }
-        .search__btn svg {
-            color:#FFF;
-        }
-        a.header__btn-contact{
-            background: transparent;
-            color: #fff!important;
-            border-color: #fff!important;
-            &:hover{
-                background: #fff!important;
-                color: #B19667!important;
-                border-color: #fff!important;
-            }
-        }
-    }
-    /* ENd - scrolled state header nav in all pages(including homepage)*/
+ /* START - scrolled state header nav in all pages(including homepage)*/
+ &.scroll{
+     background-color: transparent!important;
+     .header{
+         background-color: rgba(0,0,0,0.7);
+         .header__hamburger{
+             circle {
+                 fill: #b19a55;
+             }
+             svg rect{
+                 fill:#fff!important;
+             }
+         }
+         ul.navigation li.navigation__item{
+         color:#fff;
+             .sub-nav__link {
+                 color: #000;
+                 background-color: #fff;
+             }
+             .sub-nav__link:hover {
+                 color: #fff;
+                 background-color: #b19a55;
+             }
+             .navigation__link:after{
+                 background: #b19a55;
+             }
+         }
+         .search__btn svg {
+             color:#FFF;
+         }
+         a.header__btn-contact{
+             background: transparent;
+             color: #fff!important;
+             border-color: #fff!important;
+             &:hover{
+                 background: #fff!important;
+                 color: #B19667!important;
+                 border-color: #fff!important;
+             }
+         }
+     }
+ }
+ 
+ 
+ /* ENd - scrolled state header nav in all pages(including homepage)*/
 }
 /* END - header nav theme - WB myk*/
 
-/*display dark logo on scroll state - header nav on light BG SL - WB myk*/
-nav.logo__img.light {
-    display:none!important;
-}
-nav.logo__img.dark {
-    display:block!important;
-}
-nav.scroll .logo__img.light {
-    display:none!important;
-}
-nav.scroll .logo__img.dark {
-    display:block!important;
-}
-/*END - display dark logo on scroll state - header nav on light BG - WB myk*/
-
-/*START - Makes Global Font uppercase - paste this globally - WB myk*/
-h1{
-    text-transform:uppercase;
-    letter-spacing: 2px;
-}
-h2{
-    text-transform:uppercase;
-    letter-spacing: 2px;
-}
-h3{
-    text-transform:uppercase;
-    letter-spacing: 2px;
-}
-
 div#global-sidemenu.sidemenu{
-    & a{
-        text-transform:uppercase;
-    }
-    & button{
-        text-transform:uppercase;
-    }
+ .navigation__link,.sub-nav__link{
+     &:hover{
+         color:#b19a55;
+     }
+ }
 }
 
-footer .footer-navigation__link {
-    text-transform: uppercase;
-}
-
-
-nav#global-navbar .header.theme-light ul.navigation li.navigation__item {
-    text-transform: uppercase;
-}
-
-nav#global-navbar .header.theme-dark ul.navigation li.navigation__item {
-    text-transform: uppercase;
-}
-
-nav#global-navbar .navigation__link {
-    text-transform: uppercase;
-}
-/*END - Makes Global Font uppercase - paste this globally - WB myk*/
-
-/* START - fix x button in contact overlay - WB Jenwell*/
-#modal-global-contact-us .contact-form__submit {
-    background-color: transparent;
-    border-color: #000;
-}
-
-#modal-global-contact-us .contact-form__close.close {
-    color: #000!important;
-    opacity: 1;
-}
-
-#modal-global-contact-us .contact-form__submit:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: #fff;
-}
-
-@media only screen and (max-width: 1024px) {
-    #modal-global-contact-us {
-        div.contact-form{
-            &__container {
-                width: 100%;
-            }
-            &__close.close {
-                color: #000;
-                opacity: 1;
-            }
-        }
-    }
-}
-/* END - fix x button in contact overlay - WB Myk*/
-
-/* START - Mobile Contact Theme - WB Myk*/
-div#global-mobile-contact .buttons-holder {
-    a,
-    button {
-        background: #fff;
-        border-color: #fff;
-    }
-    /* Update Email and phone icon*/
-    a svg path{
-        fill: #B19667;
-    }
-    /* Update search button icon theme*/
-    button i {
-        color:  #B19667;
-    }
-}
-/* END - Mobile Contact Theme */
-
-
-/*START - Center social icons on mobile*/
 @media(max-width:560px){
-    /*Contact form*/
-    #modal-global-contact-us .lp-socials{
-        justify-content:center!important;
-        max-width:250px;
-        li{
-            padding:5px!important;
-        }
-    }
-    /*Side menu*/
-    #global-sidemenu .sidemenu__socials{
-        margin-right:auto;
-        .lp-socials{
-            justify-content:center;
-            max-width:250px;
-            gap:10px;
-            li{
-                margin:0!important;
-            }
-        }
-    }
-    #global-footer .lp-socials{
-            justify-content:center;
-            max-width:250px;
-            gap:10px;
-            li{
-                margin:0!important;
-            }
-        }
+ div#global-sidemenu .sidemenu__socials{
+     margin-right:auto;
+     padding-left:0;
+     padding-right:0;
+     .lp-socials{
+         justify-content:center;
+         max-width:100%;
+         gap:10px;
+         li{
+             margin:0!important;
+         }
+     }
+ }
 }
-/*END*/
 
 /*START - removing dash on all hyperlink*/
 .hyperlink-style-1:before, .hyperlink-style-2:before {
-    content: ""!important;
+ content: ""!important;
 }
 /*END - removing dash on all hyperlink*/
 
-/*START - footer theming*/
-.site-footer__disclaimer p {
-    color: #000;
-}
 footer#global-footer {
-    a{
-        color:#000;
-    }
-    a:hover{
-        color:#B19667;
-    }
-    
-    div.site-footer__col-content.lp-a{
-        opacity:1;
-    }
-    .footer-navigation__link{
-        color: #000000;
-        &:hover {
-        color: #B19667;
-        }
-    }
+ a{
+     color:#000;
+ }
+ a:hover{
+     color:#b19a55;
+ }
+ 
+ div.site-footer__col-content.lp-a{
+     opacity:1;
+ }
+ .footer-navigation__link{
+     color: #000000;
+     &:hover {
+     color: #b19a55;
+     }
+ }
 }
 /*END - footer theming - wb myk*/
 
 /*START Privacy Policy Fix*/
 #global-footer  div.site-footer__bottom  div.site-footer__copy > div:nth-child(2) > a {
-     position: relative!important;
-    &:before, &:after{
-        transition: 0.4s;
-        text-decoration: none!important;
-        line-height: 1;
-        content: "";
-        height: 1px;
-        position: absolute!important;
-        bottom: 0;
-        left: 0;
-        
-    }
-    &:before {
-        width: 100%!important;
-        background-color: #000!important;
-    }
-    &:after{
-        width: 0%!important;
-        background-color: #B19667!important; 
-    }
-    &:hover:after{
-        width: 100%!important;
-    }
+  position: relative!important;
+ &:before, &:after{
+     transition: 0.4s;
+     text-decoration: none!important;
+     line-height: 1;
+     content: "";
+     height: 1px;
+     position: absolute!important;
+     bottom: 0;
+     left: 0;
+     
+ }
+ &:before {
+     opacity: 0.3;
+     width: 100%!important;
+     background-color: #000!important;
+ }
+ &:after{
+     opacity: 1;
+     width: 0%!important;
+     background-color: #b19a55!important; 
+ }
+ &:hover:after{
+     width: 100%!important;
+ }
 }
 /*END*/
-
-/*START - Fix link style - WB Jenwell*/
-.hyperlink-style-1{
-    &:before{
-        display:none!important;
-    }
-    transition: 0.3s linear;
-    text-decoration:underline;
-    text-decoration-color:#000!important;
-    &:hover{
-        text-decoration-color:#B19667!important;
-    }
-}
-.hyperlink-style-2{
-    &:before{
-        display:none!important;
-    }
-    transition: 0.3s linear;
-    text-decoration-color:rgba(255,255,255,1);
-    &:hover{
-        text-decoration-color:#B19667;
-    }
-}
-/*END*/
-
-/*START - footer link theme and underline*/
-footer#global-footer{
-    a:not(.socials__item),.link,.footer-navigation__link{
-        text-decoration: none;
-        position: relative!important;
-        color:#000!important;
-        &:hover{
-            color:#07302C!important;
-            opacity:1!important;
-        }
-        &:before, &:after{
-            transition: 0.4s;
-            text-decoration: none!important;
-            line-height: 1;
-            content: "";
-            height: 1px;
-            position: absolute!important;
-            bottom: 0;
-            left: 0;
-        }
-        &:before {
-            width: 100%!important;
-            background-color: #7F7F7F!important;
-            opacity:1;
-        }
-        &:after{
-            width: 0%!important;
-            background-color: #B19667!important; 
-        }
-        &:hover:after{
-            width: 100%!important;
-        }
-        @media only screen and (max-width: 1280px){
-            overflow-wrap: anywhere;
-            text-decoration: underline!important;
-            white-space: normal!important;
-                &:before {
-                    background-color: transparent;
-                    width: 0%!important;
-                }
-                &:after {
-                    background-color: transparent;
-                }
-            &:hover:after{
-                width: 0%!important;
-            }
-        }
-    }
-    div.site-footer__copy div:nth-child(2) a,.footer-navigation__link{
-        padding-bottom:3px!important;
-    }
-}
-/*END - footer link theme and underline*/
-
-/* START - contact overlay theme*/
-#modal-global-contact-us{
-    .lp-input--light:-webkit-autofill{
-        &:focus {
-        -webkit-text-fill-color: #000;
-        }
-        -webkit-text-fill-color: #000;
-    }
-    .lp-input--light {
-        color: #000;
-        border-color: #000;
-    }
-    span.input-icon{
-        filter:invert(1);
-    }
-}
-div#modal-global-contact-us .company{
-        color: rgba(0, 0, 0, 1);
-    }
-/* END - contact overlay theme*/
-
-
-
-
-
-
-
-
-/*START - footer theming*/
-.site-footer__disclaimer p {
-    color: #000;
-}
-footer#global-footer {
-    a{
-        color:#000;
-    }
-    a:hover{
-        color:#1a1a1a;
-    }
-    
-    div.site-footer__col-content.lp-a{
-        opacity:1;
-    }
-    .footer-navigation__link{
-        color: #000000;
-        &:hover {
-        color: #1a1a1a;
-        }
-    }
-}
-/*END - footer theming - wb myk*/
-
-/*START Privacy Policy Fix*/
-#global-footer  div.site-footer__bottom  div.site-footer__copy > div:nth-child(2) > a {
-     position: relative!important;
-    &:before, &:after{
-        transition: 0.4s;
-        text-decoration: none!important;
-        line-height: 1;
-        content: "";
-        height: 1px;
-        position: absolute!important;
-        bottom: 0;
-        left: 0;
-        
-    }
-    &:before {
-        width: 100%!important;
-        background-color: #aaa!important;
-    }
-    &:after{
-        width: 0%!important;
-        background-color: #1a1a1a!important; 
-    }
-    &:hover:after{
-        width: 100%!important;
-    }
-}
-/*END*/
-
-/*START - footer link theme and underline*/
-footer#global-footer{
-    a:not(.socials__item),.link,.footer-navigation__link{
-        text-decoration: none;
-        position: relative!important;
-        color:#000!important;
-        &:hover{
-            color:#07302C!important;
-            opacity:1!important;
-        }
-        &:before, &:after{
-            transition: 0.4s;
-            text-decoration: none!important;
-            line-height: 1;
-            content: "";
-            height: 1px;
-            position: absolute!important;
-            bottom: 0;
-            left: 0;
-        }
-        &:before {
-            width: 100%!important;
-            background-color: #7F7F7F!important;
-            opacity:1;
-        }
-        &:after{
-            width: 0%!important;
-            background-color: #000!important; 
-        }
-        &:hover:after{
-            width: 100%!important;
-        }
-        @media only screen and (max-width: 1280px){
-            overflow-wrap: anywhere;
-            text-decoration: underline!important;
-            white-space: normal!important;
-                &:before {
-                    background-color: transparent;
-                    width: 0%!important;
-                }
-                &:after {
-                    background-color: transparent;
-                }
-            &:hover:after{
-                width: 0%!important;
-            }
-        }
-    }
-    div.site-footer__copy div:nth-child(2) a,.footer-navigation__link{
-        padding-bottom:3px!important;
-    }
-}
-/*END - footer link theme and underline*/
 
 /* START Footer Disclaimer color - WB myk*/
 #global-footer .site-footer__disclaimer {
-    opacity: 1;
-    color: #000;
+ opacity: 1;
+ color: #000;
 }
 /* END Footer Disclaimer color - WB myk*/
+
+footer#global-footer .site-footer__disclaimer:after {
+ background-color: #b19a55!important;
+ opacity: 1;
+}
+
+/* Footer, Update logo size */
+
+footer#global-footer {
+ @media only screen and (max-width:560px){
+     .lp-socials li {
+         margin-right: 6px;
+     }
+ }
+ .site-footer__logo-bar{
+     .site-footer__logo-container {
+         img {
+ max-width: 300px!important;
+ max-height: 100px!important;
+         }
+     }
+ }
+}
+
+/* END */
+
+/* Mobile Icons, update theme - WB */
+div#global-mobile-contact .buttons-holder {
+ a,
+ button {
+     background: #FFF;
+     border: 1px solid #b19a55;
+ }
+ /* Update Email and phone icon*/
+ a svg path{
+     fill: #b19a55;
+ }
+ /* Update search button icon theme*/
+ button i {
+     color:  #b19a55;
+ }
+}
+/* END */
+
+div#modal-global-contact-us{
+ .contact-form__close{
+     opacity: 1;
+     @media only screen and (max-width:768px){
+         &.close{
+             color: #fff;
+         }
+     }
+ }
+ 
+ .lp-input{
+     border-color:#fff;
+     
+     &::placeholder{
+         opacity: 1;
+     }
+ }
+ .company{
+     color:#000;
+ }
+ @media only screen and (max-width:768px){
+     .company p{
+         text-align:center;
+     }
+     .contact-form__title2{
+         text-align:center;
+     }
+     .socials li {
+         padding: 3px;
+     }
+ }
+}
+
+div.sidemenu__wrapper{
+ background-image: url(https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/dfqn7ph5uz5wfphpx6zb/side);
+ background-repeat: no-repeat;
+ -webkit-background-size: 200px;
+ background-size: 200px;
+ -webkit-background-position: bottom 0% left 50%;
+ background-position: bottom 50% left 50%;
+}
