@@ -294,3 +294,79 @@ div.boxed-text__description{
         margin-bottom:0;
     }
 }
+
+
+///////////
+
+
+div.media-text__content {
+    @media only screen and (min-width:769px){
+        max-width: 50vw;
+    }
+    @media only screen and (max-width:768px){
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:0;
+    }
+    
+    background-color: rgba(255,255,255,0.9)!important;
+}
+
+div.lp-vertical-paddings {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+div.lp-container {
+    margin-right: unset;
+    padding-right: 0;
+    @media only screen and (max-width:768px){
+        padding-left:0;
+    }
+}
+
+img.media-text__image {
+    width: 100%!important;
+}
+
+
+/////////// image with cta
+/// 
+/// 
+/// 
+/// 
+img.media-text__image {
+    width: 100% !important;
+}
+
+div.media-text__content {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: #fff;
+
+    img {
+        filter: invert(1);
+    }
+
+    @media only screen and (min-width:769px) {
+        padding: 70px !important;
+    }
+}
+
+div.lp-title-group {
+    max-width: 100%;
+}
+
+div.lp-container {
+    margin-left: unset !important;
+    max-width: 100%;
+
+    @media only screen and (max-width:768px) {
+        background-color: #000;
+    }
+
+    @media only screen and (min-width:769px) {
+        width: 40%;
+    }
+}

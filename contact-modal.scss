@@ -1,5 +1,8 @@
 /* Start - Contact modal theming - WB Myk REV */
 div#modal-global-contact-us{
+    div.redesign .link:after {
+        background-color: #DC1C2E;
+    }
     .contact-form .section-message{
         form{
             input.lp-input,textarea.lp-input{
